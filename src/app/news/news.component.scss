@@ -1,0 +1,7 @@
+/*.news {
+  display: flex;
+  flex-flow: row wrap;
+}*/
+@media (max-width: 767px) and (min-width: 575px) {
+  bv-news-item:last-of-type { display: none }
+}

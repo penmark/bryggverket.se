@@ -1,0 +1,28 @@
+{
+  "brewers": [
+    {
+      "key": "albin",
+      "name": "Albin Stenberg",
+      "mail": "nyova@oelttirexrg.fr",
+      "image": "assets/images/albin.jpg"
+    },
+    {
+      "key": "patrik",
+      "name": "Patrik Hellström",
+      "mail": "cngevx@oelttirexrg.fr",
+      "image": "assets/images/patrik.jpg"
+    },
+    {
+      "key": "peter",
+      "name": "Peter Byström",
+      "mail": "crgre@oelttirexrg.fr",
+      "image": "assets/images/peter.jpg"
+    },
+    {
+      "key": "pontus",
+      "name": "Pontus Enmark",
+      "mail": "cbaghf@oelttirexrg.fr",
+      "image": "assets/images/pontus.jpg"
+    }
+  ]
+}

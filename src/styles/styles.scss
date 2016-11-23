@@ -1,0 +1,15 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap-flex.scss";
+
+a {
+  color: $dp-blue;
+  &:hover, &:focus {
+    color: darken($dp-blue, 20%)
+  }
+}
+body {
+  font-family: $general-font;
+}
+.container {
+  max-width: $container-width;
+}

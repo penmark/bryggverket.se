@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+nav {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  a {
+    display: inline-block;
+    white-space: nowrap;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+    &.active {
+      border-bottom: 1px solid $dp-blue;
+      &:hover {
+        color: $dp-blue;
+      }
+    }
+  }
+}
+
+h2 {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 100%;
+}
+

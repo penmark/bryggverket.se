@@ -1,0 +1,13 @@
+<h1>
+  <span class="sr-only">Bryggverket</span>
+  <a [routerLink]="['']"><img src="assets/images/bryggverket_horizontal.svg" alt="Bryggverket logo"></a>
+</h1>
+<h2>Ett litet litet bryggeri i Umeå.</h2>
+<nav>
+  <a *ngFor="let l of links" [routerLink]="l.link" routerLinkActive="active">
+    {{ l.text }}
+  </a>
+  <a href="http://bryggverket.tictail.com">
+    Merch <small><i class="fa fa-external-link"></i></small>
+  </a>
+</nav>

@@ -1,0 +1,5 @@
+<div class="news row">
+  <template ngFor let-item [ngForOf]="news" let-column="index % 3">
+    <bv-news-item [item]="item" [column]="column" class="col-sm-6 col-md-4"></bv-news-item>
+  </template>
+</div>

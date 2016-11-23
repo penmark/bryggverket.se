@@ -1,0 +1,9 @@
+.news-item {
+  margin-bottom: 1.5rem;
+  a {
+    color: #333;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

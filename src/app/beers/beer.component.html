@@ -1,0 +1,12 @@
+<div class="media">
+  <div class="media-left">
+    <img [src]="beer.image.secure_url" class="img-fluid">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{ beer.name }}</h4>
+    <h5>{{ beer.type }}</h5>
+    <div [innerHTML]="description"></div>
+    <p *ngIf="beer.systembolagetId"><a [href]="'https://www.systembolaget.se/' + beer.systembolagetId">Finns på Systembolaget</a>.</p>
+    <p><em>Alkohol {{ beer.abv }}% vol</em><em *ngIf="beer.ibu">, {{ beer.ibu }} IBU</em></p>
+  </div>
+</div>
