@@ -12,8 +12,9 @@ import { Beer } from '../models';
 export class BeersPage implements OnInit {
   beers$: Observable<List<Beer>>;
   beersLoaded$: Observable<boolean>;
+  pageTitle = 'Bryggverkets öl';
   constructor(private apiService: ApiService, title: Title) {
-    title.setTitle('Våra öl | Bryggverket');
+    title.setTitle(`Våra öl | Bryggverket`);
   }
 
   ngOnInit(): void {

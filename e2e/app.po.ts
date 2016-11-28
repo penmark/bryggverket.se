@@ -1,11 +1,15 @@
 import { browser, element, by } from 'protractor';
 
 export class BryggverketPage {
-  navigateTo() {
-    return browser.get('/');
+  navigateTo(path = '/') {
+    return browser.get(path);
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  headingText() {
+    return element(by.css('bv-root h1 .sr-only')).getText();
+  }
+
+  newsItems() {
+    return element.all(by.css('bv-news-item'))
   }
 }

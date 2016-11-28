@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({name: 'rot', pure: true})
 export class RotPipe implements PipeTransform {
-  transform(value: string, args: any): string {
+  transform(value: string, args?: any): string {
     if (!value) {
       return value;
     }

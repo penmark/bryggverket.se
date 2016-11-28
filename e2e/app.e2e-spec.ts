@@ -1,14 +1,19 @@
 import { BryggverketPage } from './app.po';
 
-describe('bryggverket App', function() {
+describe('Bryggverket App', function() {
   let page: BryggverketPage;
 
   beforeEach(() => {
     page = new BryggverketPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.headingText()).toEqual('Bryggverket');
   });
+
+  it('should display news', () => {
+    page.navigateTo('/news');
+    expect(page.newsItems().count()).toEqual(9);
+  })
 });

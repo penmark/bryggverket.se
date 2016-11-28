@@ -10,9 +10,9 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutPage implements OnInit {
   brewers$: Observable<List<Brewer>>;
-
+  pageTitle = 'Om Bryggverket';
   constructor(private api: ApiService, title: Title) {
-    title.setTitle('Om oss | Bryggverket')
+    title.setTitle(`Om oss | Bryggverket`)
   }
 
   ngOnInit(): void {

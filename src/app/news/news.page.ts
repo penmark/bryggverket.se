@@ -11,7 +11,7 @@ import { Title } from '@angular/platform-browser';
 export class NewsPage implements OnInit {
   news$: Observable<List<NewsEntry>>;
   newsLoaded$: Observable<boolean>;
-
+  pageTitle = 'Nyheter';
   constructor(private service: ApiService, title: Title) {
     title.setTitle('Nyheter | Bryggverket');
   }

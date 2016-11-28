@@ -5,6 +5,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './contact.page.html',
 })
 export class ContactPage {
+  pageTitle = 'Kontakta Bryggverket';
   constructor(title: Title) {
     title.setTitle('Kontakta oss | Bryggverket');
   }

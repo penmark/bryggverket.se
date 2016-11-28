@@ -9,5 +9,4 @@ import { NewsEntry } from './news';
 })
 export class NewsEntryComponent {
   @Input() item: NewsEntry;
-  @Input() column: number;
 }

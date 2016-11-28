@@ -1,8 +1,8 @@
 export interface CloudinaryImage {
-  width: number;
-  height: number;
-  format: string;
-  url: string;
+  width?: number;
+  height?: number;
+  format?: string;
+  url?: string;
   secure_url: string;
 }
 
@@ -19,7 +19,7 @@ export interface Beer {
   image: CloudinaryImage;
   description: string;
   abv: number;
-  ibu: number;
+  ibu?: number;
   systembolagetId?: string;
 }
 

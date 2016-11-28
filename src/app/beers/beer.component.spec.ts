@@ -4,6 +4,17 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { BeerComponent } from './beer.component';
+import { Beer } from '../models';
+
+const beer: Beer = {
+  name: 'Olle',
+  slug: 'olle',
+  type: 'Bärs',
+  image: {secure_url: '?url'},
+  description: 'Öl 2000',
+  abv: 10.2,
+  systembolagetId: undefined
+};
 
 describe('BeerComponent', () => {
   let component: BeerComponent;
@@ -19,10 +30,11 @@ describe('BeerComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(BeerComponent);
     component = fixture.componentInstance;
+    component.beer = beer;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should exist', () => {
     expect(component).toBeTruthy();
   });
 });
