@@ -10,6 +10,6 @@ export interface NewsEntry {
     low_resolution?: ImageDefinition,
     standard_resolution?: ImageDefinition,
     thumbnail?: ImageDefinition
-  }
+  };
   link: string;
 }

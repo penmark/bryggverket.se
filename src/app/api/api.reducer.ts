@@ -25,15 +25,12 @@ const initialState: ApiState = {
 
 export const apiReducer: ActionReducer<any> = (state: ApiState = initialState, action: BvAction) => {
   switch (action.type) {
-    case ActionTypes.LOADED_NEWS: {
-      return Object.assign({}, state, {newsItems: List(action.payload)})
-    }
-    case ActionTypes.BEERS_LOADED: {
-      return Object.assign({}, state, {beers: List(action.payload)})
-    }
-    case ActionTypes.CONTACTS_LOADED: {
-      return Object.assign({}, state, {brewers: List(action.payload)})
-    }
+    case ActionTypes.LOADED_NEWS:
+      return Object.assign({}, state, {newsItems: List(action.payload)});
+    case ActionTypes.BEERS_LOADED:
+      return Object.assign({}, state, {beers: List(action.payload)});
+    case ActionTypes.CONTACTS_LOADED:
+      return Object.assign({}, state, {brewers: List(action.payload)});
     default:
       return state;
   }

@@ -1,6 +1,3 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async } from '@angular/core/testing';
 import { NewsComponent } from './news.component';
 
 describe('Component: News', () => {

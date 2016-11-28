@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api/api.service';
 import { Observable } from 'rxjs';
 import { List } from 'immutable';
@@ -8,11 +8,11 @@ import { Title } from '@angular/platform-browser';
 @Component({
   templateUrl: './about.page.html',
 })
-export class AboutPage implements OnInit {
+export class AboutPage implements OnInit { // tslint:disable-line:component-class-suffix
   brewers$: Observable<List<Brewer>>;
   pageTitle = 'Om Bryggverket';
   constructor(private api: ApiService, title: Title) {
-    title.setTitle(`Om oss | Bryggverket`)
+    title.setTitle(`Om oss | Bryggverket`);
   }
 
   ngOnInit(): void {

@@ -12,5 +12,5 @@ export class HeaderComponent {
     {link: ['beers'], text: 'Våra öl'},
     {link: ['about'], text: 'Om oss'},
     {link: ['contact'], text: 'Kontakt'},
-  ]
+  ];
 }

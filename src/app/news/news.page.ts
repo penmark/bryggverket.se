@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   templateUrl: './news.page.html',
 })
-export class NewsPage implements OnInit {
+export class NewsPage implements OnInit { // tslint:disable-line:component-class-suffix
   news$: Observable<List<NewsEntry>>;
   newsLoaded$: Observable<boolean>;
   pageTitle = 'Nyheter';

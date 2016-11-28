@@ -13,7 +13,7 @@ export const ActionTypes = {
 
 export class LoadNewsAction implements Action {
   type = ActionTypes.LOAD_NEWS;
-  payload = undefined;
+  payload: undefined;
 }
 export class NewsLoadedAction implements Action {
   type = ActionTypes.LOADED_NEWS;
@@ -24,7 +24,7 @@ export class NewsLoadedAction implements Action {
 
 export class LoadBeersAction implements Action {
   type = ActionTypes.LOAD_BEERS;
-  payload = undefined;
+  payload: undefined;
 }
 export class BeersLoadedAction implements Action {
   type = ActionTypes.BEERS_LOADED;
@@ -35,7 +35,7 @@ export class BeersLoadedAction implements Action {
 
 export class LoadContactsAction implements Action {
   type = ActionTypes.LOAD_CONTACTS;
-  payload = undefined;
+  payload: undefined;
 }
 export class ContactsLoadedAction implements Action {
   type = ActionTypes.CONTACTS_LOADED;

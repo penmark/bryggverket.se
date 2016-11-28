@@ -8,7 +8,7 @@ export interface CloudinaryImage {
 
 export interface Brewer {
   email: string;
-  name: {first: string, last: string}
+  name: {first: string, last: string};
   image: CloudinaryImage;
 }
 

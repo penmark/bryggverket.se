@@ -7,7 +7,7 @@ export class RotPipe implements PipeTransform {
       return value;
     }
     return value.replace(/[a-z]/ig, (c: string) => {
-      return String.fromCharCode( c.charCodeAt(0) + ( c.toUpperCase() <= "M" ? 13 : -13 ) );
+      return String.fromCharCode(c.charCodeAt(0) + (c.toUpperCase() <= 'M' ? 13 : -13));
     });
   }
 }
